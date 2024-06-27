@@ -1,0 +1,214 @@
+body {
+    height: 100vh;
+    align-content: center;
+}
+
+#loginSection {
+    background-color: #FFF;
+    opacity: 1;
+}
+
+#containerLogin {
+    background: url(./image/image.png) no-repeat;
+    background-position-x: right;
+    width: 375px;
+    height: 812px;
+    border: 1px solid #E9ECEF;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 0px rgba(233, 236, 239, 0.71);
+    position: relative;
+    padding: 20px;
+}
+
+.containerButton {
+    position: absolute;
+    top: 65px;
+}
+
+.backButton {
+    background-color: #8B8B8B;
+    border-radius: 50%;
+    color: #FFF;
+    width: 28px;
+    height: 28px;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-size: 20px;
+    }
+}
+
+.containerTitle {
+
+    position: absolute;
+    top: 127px;
+
+    h1 {
+        font-size: 24px;
+        font-family: "Tenor Sans", sans-serif;
+        font-weight: 400;
+        color: #20130B;
+    }
+
+    h3 {
+        font-size: 14px;
+        font-family: "Tenor Sans", sans-serif;
+        font-weight: 400;
+        color: #8B8B8B;
+        line-height: 1;
+    }
+}
+
+.containerForm {
+    position: absolute;
+    width: 100%;
+    top: 245px;
+    left: 0;
+    padding: 0px 20px;
+}
+
+.containerInput {
+    border: 1px solid #E9ECEF;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px;
+    border-radius: 8px;
+    gap: 18px;
+}
+
+.email,
+.password {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        color: #20130B;
+        font-size: 13px;
+        font-family: "Tenor Sans", sans-serif;
+        font-weight: 400;
+    }
+
+    input {
+        border: transparent;
+    }
+
+    input::placeholder {
+        color: #8B8B8B;
+        font-size: 13px;
+        font-family: "Tenor Sans", sans-serif;
+        font-weight: 400;
+    }
+}
+
+.inputIcon {
+    align-self: center;
+}
+
+.containerInput:first-child {
+    margin-bottom: 8px;
+}
+
+.containerInput{
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.inputIcon:last-child {
+    position: absolute;
+    right: 20px;
+}
+
+.containerButtonForm {
+    display: flex;
+    flex-direction: column;
+
+    button {
+        background-color: #BC8363;
+        color: #FFF;
+        border: transparent;
+        border-radius: 8px;
+        padding: 20px;
+        font-size: 13px;
+        font-family: "Tenor Sans", sans-serif;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    a {
+        color: #BC8363;
+        font-size: 13px;
+        font-family: "Tenor Sans", sans-serif;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+.containerSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 1rem 0rem;
+
+    p {
+        color: #8B8B8B;
+        font-size: 13px;
+        font-family: "Tenor Sans", sans-serif;
+        font-weight: 400;
+    }
+
+    a {
+        color: #BC8363;
+        font-size: 13px;
+        font-family: "Tenor Sans", sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .createAccount {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.socialIcons {
+    padding: 0px 12px;
+}
+
+#revelarSenha {
+    cursor: pointer;
+}
+
+@media (max-width:430px) {
+    body {
+        height: auto;
+        align-content: unset;
+    }
+
+    #loginSection {
+        padding: 2rem 1rem;
+    }
+
+    #containerLogin {
+        width: auto;
+    }
+}
+
+@media (min-width:991px) and (max-width:1400px) {
+    body {
+        align-content: unset;
+    }
+
+    #loginSection {
+        padding: 2rem 0rem;
+    }
+}
